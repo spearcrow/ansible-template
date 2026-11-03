@@ -1,0 +1,8 @@
+---
+- name: Verify local Ansible setup
+  hosts: local
+  gather_facts: false
+  tasks:
+    - name: Show target host
+      ansible.builtin.debug:
+        msg: "{{ inventory_hostname }}"

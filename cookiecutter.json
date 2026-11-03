@@ -1,0 +1,7 @@
+{
+  "project_name": "Ansible Project",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
+  "_copy_without_render": [
+    "playbooks/*.yml"
+  ]
+}
